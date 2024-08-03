@@ -37,8 +37,12 @@ def createMem0():
     
 def testAPI():
     m = createMem0()
-    m.add("Likes to play cricket on weekends", user_id="alice", metadata={"category": "hobbies"})
+    print("add to mem0 1 ...")
+    m.add("I likes to play cricket on weekends", user_id="alice", metadata={"category": "hobbies"})
+    print("add to mem0 2 ...")
+    m.add("I likes hopping too", user_id="alice", metadata={"category": "hobbies"})
     # Get all memories
+    print("get all from mem0...")
     all_memories = m.get_all()
     print(all_memories)
 
@@ -104,3 +108,6 @@ def test_list_memories(memory_store):
     memories = memory_store.list()
     assert data1 in memories
     assert data2 in memories
+
+if __name__ == '__main__':
+    testAPI()
