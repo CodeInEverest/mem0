@@ -38,6 +38,7 @@ def createMem0():
                 "port": 6333,
             }
         },
+        "history_db_path":"/home/azureuser/ailurus/history.db"
     }
 
     m = Memory.from_config(config)
