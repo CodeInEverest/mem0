@@ -6,7 +6,7 @@ else
     commitStr="fix"
 fi
 
-branch="master"
+branch="main"
 if [ $# -gt 1 ]; then
     branch=$2
 fi
