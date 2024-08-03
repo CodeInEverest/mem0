@@ -5,7 +5,7 @@ from mem0.embeddings.base import EmbeddingBase
 
 
 class AzureOpenAIEmbedding(EmbeddingBase):
-    def __init__(self, model="text-embedding-3-large"):# model = "deployment_name"
+    def __init__(self, model="text-embedding-3-small"):# model = "deployment_name"
         self.model = model
         self.dims = 1536
 

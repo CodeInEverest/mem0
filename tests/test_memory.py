@@ -7,18 +7,26 @@ def createMem0():
     #llm
     os.environ["AZURE_API_KEY"] = "3ed55470cade452cb907e5a928a587d6"
     os.environ["AZURE_API_BASE"] = "https://LuupAI.openai.azure.com/openai/deployments/luup/chat/completions?api-version=2023-03-15-preview"
-    os.environ["AZURE_API_VERSION"] = "2023-03-15-preview"
-
+    os.environ["AZURE_API_VERSION"] = "2023-03-15-preview"#"2024-05-13"#
+    
     #embed
     os.environ["AZURE_OPENAI_API_KEY"] = "3ed55470cade452cb907e5a928a587d6"
-    os.environ["AZURE_OPENAI_API_VERSION"] = "2023-05-15"
-    os.environ["AZURE_OPENAI_ENDPOINT"] = "https://LuupAI.openai.azure.com/openai/deployments/text-embedding-3-large/embeddings?api-version=2023-05-15"
+    os.environ["AZURE_OPENAI_API_VERSION"] = "2023-05-15"#"1"#
+    os.environ["AZURE_OPENAI_ENDPOINT"] = "https://LuupAI.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2023-05-15"
 
     config = {
         "llm": {
             "provider": "litellm",
             "config": {
-                "model": "azure_ai/command-r-plus",
+                "model": "luup",
+                "temperature": 0.1,
+                "max_tokens": 2000,
+            }
+        },
+        "embedder": {
+            "provider": "azureOpenai",
+            "config": {
+                "model": "text-embedding-3-small",
                 "temperature": 0.1,
                 "max_tokens": 2000,
             }
