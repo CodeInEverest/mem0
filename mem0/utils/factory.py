@@ -32,6 +32,7 @@ class LlmFactory:
 class EmbedderFactory:
     provider_to_class = {
         "openai": "mem0.embeddings.openai.OpenAIEmbedding",
+        "azureOpenai": "mem0.embeddings.azureOpenai.AzureOpenAIEmbedding",
         "ollama": "mem0.embeddings.ollama.OllamaEmbedding",
         "huggingface": "mem0.embeddings.huggingface.HuggingFaceEmbedding"
     }
