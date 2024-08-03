@@ -22,7 +22,14 @@ def createMem0():
                 "temperature": 0.1,
                 "max_tokens": 2000,
             }
-        }
+        },
+        "vector_store": {
+            "provider": "qdrant",
+            "config": {
+                "host": "localhost",
+                "port": 6333,
+            }
+        },
     }
 
     m = Memory.from_config(config)
@@ -31,6 +38,10 @@ def createMem0():
 def testAPI():
     m = createMem0()
     m.add("Likes to play cricket on weekends", user_id="alice", metadata={"category": "hobbies"})
+    # Get all memories
+    all_memories = m.get_all()
+    print(all_memories)
+
 
 @pytest.fixture
 def memory_store():
