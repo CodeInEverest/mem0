@@ -119,14 +119,15 @@ class Memory(MemoryBase):
 
         if not prompt:
             prompt = MEMORY_DEDUCTION_PROMPT.format(user_input=data, metadata=metadata)
-        extracted_memories = self.llm.generate_response(
-            messages=[
+        msg = [
                 {
                     "role": "system",
                     "content": "You are an expert at deducing facts, preferences and memories from unstructured text.",
                 },
                 {"role": "user", "content": prompt},
             ]
+        extracted_memories = self.llm.generate_response(
+            messages=msg
         )
         existing_memories = self.vector_store.search(
             name=self.collection_name,

@@ -16,10 +16,10 @@ class AzureOpenAILLM(LLMBase):
             self.config.model="gpt-4o"
         
         self.client = AzureOpenAI(
-            api_key = os.getenv("AZURE_OPENAI_API_KEY"),
-            api_version = os.getenv("AZURE_OPENAI_API_VERSION"),
-            azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT"),
-            azure_deployment=os.getenv("AZURE_OPENAI_DEPLOYMENT")
+            api_key = os.getenv("LLM_AZURE_OPENAI_API_KEY"),
+            api_version = os.getenv("LLM_AZURE_OPENAI_API_VERSION"),
+            azure_endpoint = os.getenv("LLM_AZURE_OPENAI_API_ENDPOINT"),
+            azure_deployment=os.getenv("LLM_AZURE_OPENAI_API_DEPLOYMENT")
         )
 
     def _parse_response(self, response, tools):

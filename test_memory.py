@@ -7,16 +7,16 @@ import os
 
 def createMem0():
     #llm
-    os.environ["AZURE_API_KEY"] = "3ed55470cade452cb907e5a928a587d6"
-    os.environ["AZURE_API_VERSION"] = "2023-03-15-preview"#"2024-05-13"#
-    os.environ["AZURE_API_ENDPOINT"] = "https://LuupAI.openai.azure.com/openai/deployments/luup/chat/completions?api-version=2023-03-15-preview"
-    os.environ["AZURE_API_DEPLOYMENT"] = "luup"
+    os.environ["LLM_AZURE_OPENAI_API_KEY"] = "3ed55470cade452cb907e5a928a587d6"
+    os.environ["LLM_AZURE_OPENAI_API_VERSION"] = "2023-03-15-preview"#"2024-05-13"#
+    os.environ["LLM_AZURE_OPENAI_API_ENDPOINT"] = "https://LuupAI.openai.azure.com/openai/deployments/luup/chat/completions?api-version=2023-03-15-preview"
+    os.environ["LLM_AZURE_OPENAI_API_DEPLOYMENT"] = "luup"
     
     #embed
-    os.environ["AZURE_OPENAI_API_KEY"] = "3ed55470cade452cb907e5a928a587d6"
-    os.environ["AZURE_OPENAI_API_VERSION"] = "2023-05-15"#"1"#
-    os.environ["AZURE_OPENAI_ENDPOINT"] = "https://LuupAI.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2023-05-15"
-    os.environ["AZURE_OPENAI_DEPLOYMENT"] = "text-embedding-3-small"
+    os.environ["EMBED_AZURE_OPENAI_API_KEY"] = "3ed55470cade452cb907e5a928a587d6"
+    os.environ["EMBED_AZURE_OPENAI_API_VERSION"] = "2023-05-15"#"1"#
+    os.environ["EMBED_AZURE_OPENAI_API_ENDPOINT"] = "https://LuupAI.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2023-05-15"
+    os.environ["EMBED_AZURE_OPENAI_API_DEPLOYMENT"] = "text-embedding-3-small"
 
     config = {
         "llm": {
