@@ -17,6 +17,7 @@ class SQLiteManager:
             table_exists = cursor.fetchone() is not None
 
             if table_exists:
+                cursor.execute("DROP TABLE IF EXISTS old_history")
                 # Rename the old table
                 cursor.execute("ALTER TABLE history RENAME TO old_history")
 
@@ -37,7 +38,7 @@ class SQLiteManager:
                 # Copy data from the old table to the new table
                 cursor.execute("""
                     INSERT INTO history (id, memory_id, old_memory, new_memory, new_value, event, created_at, updated_at, is_deleted)
-                    SELECT id, memory_id, prev_value, new_value, new_value, event, timestamp, timestamp, is_deleted
+                    SELECT id, memory_id, new_value, new_value, new_value, event, created_at, updated_at, is_deleted
                     FROM old_history
                 """)
 

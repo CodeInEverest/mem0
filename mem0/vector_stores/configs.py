@@ -14,7 +14,16 @@ class QdrantConfig(BaseModel):
     url: Optional[str] = Field(None, description="Full URL for Qdrant server")
     api_key: Optional[str] = Field(None, description="API key for Qdrant server")
 
-    @model_validator(mode="before")
+    def from_config(self, conf:dict):
+        host, port, path, url, api_key = (
+            conf["host"],
+            conf["port"],
+            # conf["path"],
+            # conf["url"],
+            # conf["api_key"],
+        )
+
+    #t @model_validator(mode="before")
     def check_host_port_or_path(cls, values):
         host, port, path, url, api_key = (
             values.get("host"),
@@ -62,11 +71,13 @@ class VectorStoreConfig(BaseModel):
         default={},
     )
 
-    @field_validator("config")
+    #t @field_validator("config")
     def validate_config(cls, v, values):
         provider = values.data.get("provider")
         if provider == "qdrant":
-            return QdrantConfig(**v.model_dump())
+            #t return QdrantConfig(**v.model_dump()).check_host_port_or_path()
+            print(f"qdrant conf:{v}")
+            return QdrantConfig().from_config(v)
         elif provider == "chromadb":
             return ChromaDbConfig(**v.model_dump())
         else:
