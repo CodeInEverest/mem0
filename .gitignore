@@ -184,3 +184,6 @@ notebooks/*.yaml
 eval/
 qdrant_storage/
 .crossnote
+
+#ChuanhuChatGPT
+./ChuanhuChatGPT/config.json

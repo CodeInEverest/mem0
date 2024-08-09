@@ -108,7 +108,6 @@ class Memory(MemoryBase):
         if metadata is None:
             metadata = {}
         embeddings = self.embedding_model.embed(data)
-
         filters = filters or {}
         if user_id:
             filters["user_id"] = metadata["user_id"] = user_id
@@ -119,6 +118,7 @@ class Memory(MemoryBase):
 
         if not prompt:
             prompt = MEMORY_DEDUCTION_PROMPT.format(user_input=data, metadata=metadata)
+        #print(f"input prompt:{prompt}")
         msg = [
                 {
                     "role": "system",
@@ -129,12 +129,14 @@ class Memory(MemoryBase):
         extracted_memories = self.llm.generate_response(
             messages=msg
         )
+        #print(f"新增记忆：extracted_memories:{extracted_memories}")
         existing_memories = self.vector_store.search(
             name=self.collection_name,
             query=embeddings,
             limit=5,
             filters=filters,
         )
+        #print(f"从向量数据库获取历史记忆：existing_memories:{existing_memories}")
         existing_memories = [
             MemoryItem(
                 id=mem.id,
@@ -145,17 +147,20 @@ class Memory(MemoryBase):
             for mem in existing_memories
         ]
         serialized_existing_memories = [
-            item.model_dump(include={"id", "text", "score"})
+            # item.model_dump(include={"id", "text", "score"})
+            item.model_dump(include={"id", "memory", "score"})
             for item in existing_memories
         ]
         logging.info(f"Total existing memories: {len(existing_memories)}")
         messages = get_update_memory_messages(
             serialized_existing_memories, extracted_memories
         )
+        #print(f"向LLM请求合并记忆 messages")
         # Add tools for noop, add, update, delete memory.
         tools = [ADD_MEMORY_TOOL, UPDATE_MEMORY_TOOL, DELETE_MEMORY_TOOL]
         response = self.llm.generate_response(messages=messages, tools=tools)
         tool_calls = response["tool_calls"]
+        #print(f"response:{response}")
 
         response = []
         if tool_calls:

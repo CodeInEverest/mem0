@@ -1,9 +1,12 @@
 import pytest
 #import sys
 #sys.path.append('./')
-
+from flask import Flask, jsonify, request
 from mem0.memory.main import Memory
 import os
+
+app = Flask(__name__)
+memory=None
 
 def createMem0():
     #llm
@@ -47,18 +50,38 @@ def createMem0():
 
     m = Memory.from_config(config)
     return m
-    
-def testAPI():
-    m = createMem0()
-    print("add to mem0 1 ...")
-    m.add("I likes to play cricket on weekends", user_id="alice", metadata={"category": "hobbies"})
-    print("add to mem0 2 ...")
-    m.add("I likes hopping too", user_id="alice", metadata={"category": "hobbies"})
-    # Get all memories
-    print("get all from mem0...")
-    all_memories = m.get_all()
-    print(all_memories)
 
+@app.route("/add", methods=["POST"])   
+def testAPI():
+    data = request.get_json()
+    content = data.get("content")
+    userID = "lilei"#data.get("userID")
+    try:
+        result = memory.add(content, user_id=userID, metadata={"category": "events"})
+    except Exception as e:
+        return jsonify({"data": f"{e}"}), 500
+    # print("add to mem0 2 ...")
+    #mid2 = memory.add("I likes to fly kite on weekends", user_id="alice", metadata={"category": "hobbies"})
+    #print(mid2)
+    #cont1=memory.get('a5f3bafb-5e62-49df-ad80-f3d495f4c272')
+    #print(cont1)
+
+    
+    # Get all memories
+    #print("-------合并后的记忆：get all from alice...")
+    #all_memories = memory.get_all(user_id="alice")
+    #print(all_memories)
+    #print("-------合并后的记忆：get all from mike...")
+    all_memories = memory.get_all(user_id=userID)
+    simple_memories = []
+    for item in all_memories:
+        simple_memories.append(item["memory"])
+    #print(simple_memories)
+    return jsonify({"data": f"{simple_memories}"}), 200
 
 if __name__ == '__main__':
-    testAPI()
+    if memory is None:
+        memory = createMem0()
+    app.run(host="0.0.0.0", port=5000, debug=False)
+    #testAPI()
+
