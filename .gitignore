@@ -185,5 +185,8 @@ eval/
 qdrant_storage/
 .crossnote
 
+test_memory.py
+
 #ChuanhuChatGPT
-./ChuanhuChatGPT/config.json
+ChuanhuChatGPT/config.json
+
