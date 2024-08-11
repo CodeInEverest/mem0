@@ -30,7 +30,7 @@ class Azure_OpenAI_Client(Base_Chat_Langchain_Client):
         completion=[{"chunk":"yes "},{"chunk":"get_answer_stream_iter"}]
         partial_text = ""
         for chunk in completion:
-            partial_text += chunk.choices[0].delta.content or ""
+            partial_text += chunk
             yield partial_text
 
         # it = CallbackToIterator()
