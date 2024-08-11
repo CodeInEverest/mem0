@@ -1181,9 +1181,8 @@ class Base_Chat_Langchain_Client(BaseLLMModel):
             self.model, BaseChatModel
         ), "model is not instance of LangChain BaseChatModel"
         history = self._get_langchain_style_history()
-        #t response = self.model.generate(history)
-        #t return response.content, sum(response.content)
-        return "yes", sum("yes")
+        response = self.model.generate(history)
+        return response.content, sum(response.content)
 
     def get_answer_stream_iter(self):
         it = CallbackToIterator()
