@@ -27,10 +27,10 @@ class Azure_OpenAI_Client(Base_Chat_Langchain_Client):
         # return response.content, sum(response.content)
 
     def get_answer_stream_iter(self):
-        completion=[{"chunk":"yes "},{"chunk":"get_answer_stream_iter"}]
+        completion=[{"content":"yes "},{"content":"get_answer_stream_iter"}]
         partial_text = ""
         for chunk in completion:
-            partial_text += chunk
+            partial_text += chunk.content
             yield partial_text
 
         # it = CallbackToIterator()
