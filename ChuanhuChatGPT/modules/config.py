@@ -175,7 +175,9 @@ groq_api_key = config.get("groq_api_key", "")
 os.environ["GROQ_API_KEY"] = groq_api_key
 
 load_config_to_environ(["openai_api_type", "azure_openai_api_key", "azure_openai_api_base_url",
-                       "azure_openai_api_version", "azure_deployment_name", "azure_embedding_deployment_name", "azure_embedding_model_name"])
+                       "azure_openai_api_version", "azure_deployment_name", "azure_embedding_deployment_name", "azure_embedding_model_name",
+                       "azure_embedding_api_key","azure_embedding_api_version","azure_embedding_api_base_url"
+                       ])
 
 
 usage_limit = os.environ.get("USAGE_LIMIT", config.get("usage_limit", 120))

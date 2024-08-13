@@ -1,0 +1,32 @@
+{
+    "system": "You are a helpful assistant.",
+    "history": [
+        {
+            "role": "user",
+            "content": "有钱没钱都想去桂林旅游几天"
+        },
+        {
+            "role": "assistant",
+            "content": "- Needs to do homework early after school today.\n- Enjoys running\n- Feels happy after running\n- Finds running relaxing\n- Plans to go to bed early tonight.\n- Questions if all students have such a hard time.\n- Plans to go to Shenzhen tomorrow.\n- Needs to buy a ticket for the trip.\n- Likes to fly kites\n- Enjoys this activity on weekends\n- Finds math application problems to be similar and easy to complete.\n- Feels overwhelmed by the amount of homework given by teachers.\n- Interested in calculus and limits.\n- Curious about the historical development of calculus.\n- Specifically interested in whether Newton considered the relationship between calculus and limits when he developed it.\n"
+        }
+    ],
+    "chatbot": [
+        [
+            "<div class=\"user-message\">有钱没钱都想去桂林旅游几天</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">&#45; Needs to do homework early after school today&#46;<br>&#45; Enjoys running<br>&#45; Feels happy after running<br>&#45; Finds running relaxing<br>&#45; Plans to go to bed early tonight&#46;<br>&#45; Questions if all students have such a hard time&#46;<br>&#45; Plans to go to Shenzhen tomorrow&#46;<br>&#45; Needs to buy a ticket for the trip&#46;<br>&#45; Likes to fly kites<br>&#45; Enjoys this activity on weekends<br>&#45; Finds math application problems to be similar and easy to complete&#46;<br>&#45; Feels overwhelmed by the amount of homework given by teachers&#46;<br>&#45; Interested in calculus and limits&#46;<br>&#45; Curious about the historical development of calculus&#46;<br>&#45; Specifically interested in whether Newton considered the relationship between calculus and limits when he developed it&#46;<br></pre></div><div class=\"md-message\">\n\n- Needs to do homework early after school today.\n- Enjoys running\n- Feels happy after running\n- Finds running relaxing\n- Plans to go to bed early tonight.\n- Questions if all students have such a hard time.\n- Plans to go to Shenzhen tomorrow.\n- Needs to buy a ticket for the trip.\n- Likes to fly kites\n- Enjoys this activity on weekends\n- Finds math application problems to be similar and easy to complete.\n- Feels overwhelmed by the amount of homework given by teachers.\n- Interested in calculus and limits.\n- Curious about the historical development of calculus.\n- Specifically interested in whether Newton considered the relationship between calculus and limits when he developed it.\n\n</div>"
+        ]
+    ],
+    "model_name": "azure-openai",
+    "single_turn": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "n_choices": 1,
+    "stop_sequence": [],
+    "token_upper_limit": 4096,
+    "max_generation_token": null,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "logit_bias": null,
+    "user_identifier": "",
+    "metadata": {}
+}

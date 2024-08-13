@@ -1,0 +1,28 @@
+{
+    "system": "You are a helpful assistant.",
+    "history": [
+        {
+            "role": "user",
+            "content": "明天去洛杉矶，得准备下行李"
+        }
+    ],
+    "chatbot": [
+        [
+            "明天去洛杉矶，得准备下行李",
+            ""
+        ]
+    ],
+    "model_name": "azure-openai",
+    "single_turn": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "n_choices": 1,
+    "stop_sequence": [],
+    "token_upper_limit": 4096,
+    "max_generation_token": null,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "logit_bias": null,
+    "user_identifier": "",
+    "metadata": {}
+}
