@@ -157,6 +157,7 @@ class ModelType(Enum):
     GoogleGemma = 20
     Ollama = 21
     Groq = 22
+    TestMem0 = 100
 
     @classmethod
     def get_type(cls, model_name: str):

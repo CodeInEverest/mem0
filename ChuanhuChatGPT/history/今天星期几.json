@@ -1,0 +1,44 @@
+{
+    "system": "You are a helpful assistant.",
+    "history": [
+        {
+            "role": "user",
+            "content": "今天星期几"
+        },
+        {
+            "role": "assistant",
+            "content": "对不起，我不能实时查看日期。你可以查看手机、电脑或日历来确认今天是星期几。"
+        },
+        {
+            "role": "user",
+            "content": "hi"
+        },
+        {
+            "role": "assistant",
+            "content": "你好！有什么我可以帮忙的吗？"
+        }
+    ],
+    "chatbot": [
+        [
+            "<div class=\"user-message\">今天星期几</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">对不起，我不能实时查看日期。你可以查看手机、电脑或日历来确认今天是星期几。</pre></div><div class=\"md-message\">\n\n对不起，我不能实时查看日期。你可以查看手机、电脑或日历来确认今天是星期几。\n</div>"
+        ],
+        [
+            "hi",
+            "你好！有什么我可以帮忙的吗？"
+        ]
+    ],
+    "model_name": "azure-openai",
+    "single_turn": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "n_choices": 1,
+    "stop_sequence": [],
+    "token_upper_limit": 4096,
+    "max_generation_token": null,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "logit_bias": null,
+    "user_identifier": "",
+    "metadata": {}
+}
