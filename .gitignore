@@ -189,4 +189,5 @@ test_memory.py
 
 #ChuanhuChatGPT
 ChuanhuChatGPT/config.json
+ChuanhuChatGPT/history/*
 
