@@ -1,0 +1,68 @@
+{
+    "system": "You are a helpful assistant.",
+    "history": [
+        {
+            "role": "user",
+            "content": "我的苹果手机坏了，不知道哪出了问题"
+        },
+        {
+            "role": "assistant",
+            "content": "很抱歉听到你的苹果手机出了问题。要确定具体问题，以下是一些常见问题和解决方法，希望能帮到你：\n\n1. **设备无法开机**:\n   - **充电**：确保设备有足够的电量。尝试使用不同的充电线和充电器，充电至少15分钟。\n   - **强制重启**：按住电源按钮和音量减小按钮（或仅电源按钮，取决于型号）约10秒钟，直到看到苹果标志。\n\n2. **屏幕无反应或触摸失灵**:\n   - **清洁屏幕**：确保屏幕没有灰尘或油污。\n   - **强制重启**：同上，尝试强制重启设备。\n\n3. **应用程序频繁崩溃**:\n   - **更新软件**：检查是否有最新的iOS更新，并安装。\n   - **重新安装应用**：卸载并重新安装出现问题的应用程序。\n\n4. **设备过热**:\n   - **关闭不必要的应用**：双击主屏幕按钮（或从底部向上滑动并暂停，取决于型号），关闭后台运行的应用。\n   - **避免高温环境**：将设备放在阴凉处，避免阳光直射。\n\n5. **无法连接到Wi-Fi**:\n   - **重启路由器**：尝试重启你的Wi-Fi路由器。\n   - **忘记网络并重新连接**：进入设置 > Wi-Fi，点击你连接的网络，然后选择“忽略此网络”，之后重新连接。\n\n6. **电池耗电快**:\n   - **检查电池健康**：进入设置 > 电池 > 电池健康，查看电池容量和建议。\n   - **关闭耗电功能**：关闭不必要的功能如蓝牙、定位服务和后台应用刷新。\n\n如果这些步骤没有解决你的问题，建议前往苹果官方授权的维修中心进行专业检测和维修。苹果官网上可以找到最近的维修点地址和联系方式。"
+        },
+        {
+            "role": "user",
+            "content": "我的苹果手机坏了，不知道哪出了问题"
+        },
+        {
+            "role": "assistant",
+            "content": "<li>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone.\n"
+        },
+        {
+            "role": "user",
+            "content": "下一代苹果手机什么时候发售，我等着买呢"
+        },
+        {
+            "role": "assistant",
+            "content": "<li>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone. Interested in the release date of the next generation of Apple iPhones. Eager to purchase the next generation of Apple iPhones.\n"
+        },
+        {
+            "role": "user",
+            "content": "充电器接口能不能用type-c"
+        },
+        {
+            "role": "assistant",
+            "content": "<li>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone. Interested in the release date of the next generation of Apple iPhones. Eager to purchase the next generation of Apple iPhones. Interested in charging interfaces, specifically inquires about the compatibility of Type-C charging interfaces.\n"
+        }
+    ],
+    "chatbot": [
+        [
+            "<div class=\"user-message\">我的苹果手机坏了，不知道哪出了问题</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">很抱歉听到你的苹果手机出了问题。要确定具体问题，以下是一些常见问题和解决方法，希望能帮到你：<br><br>1&#46; &#42;&#42;设备无法开机&#42;&#42;&#58;<br>   &#45; &#42;&#42;充电&#42;&#42;：确保设备有足够的电量。尝试使用不同的充电线和充电器，充电至少15分钟。<br>   &#45; &#42;&#42;强制重启&#42;&#42;：按住电源按钮和音量减小按钮（或仅电源按钮，取决于型号）约10秒钟，直到看到苹果标志。<br><br>2&#46; &#42;&#42;屏幕无反应或触摸失灵&#42;&#42;&#58;<br>   &#45; &#42;&#42;清洁屏幕&#42;&#42;：确保屏幕没有灰尘或油污。<br>   &#45; &#42;&#42;强制重启&#42;&#42;：同上，尝试强制重启设备。<br><br>3&#46; &#42;&#42;应用程序频繁崩溃&#42;&#42;&#58;<br>   &#45; &#42;&#42;更新软件&#42;&#42;：检查是否有最新的iOS更新，并安装。<br>   &#45; &#42;&#42;重新安装应用&#42;&#42;：卸载并重新安装出现问题的应用程序。<br><br>4&#46; &#42;&#42;设备过热&#42;&#42;&#58;<br>   &#45; &#42;&#42;关闭不必要的应用&#42;&#42;：双击主屏幕按钮（或从底部向上滑动并暂停，取决于型号），关闭后台运行的应用。<br>   &#45; &#42;&#42;避免高温环境&#42;&#42;：将设备放在阴凉处，避免阳光直射。<br><br>5&#46; &#42;&#42;无法连接到Wi&#45;Fi&#42;&#42;&#58;<br>   &#45; &#42;&#42;重启路由器&#42;&#42;：尝试重启你的Wi&#45;Fi路由器。<br>   &#45; &#42;&#42;忘记网络并重新连接&#42;&#42;：进入设置 &#62; Wi&#45;Fi，点击你连接的网络，然后选择“忽略此网络”，之后重新连接。<br><br>6&#46; &#42;&#42;电池耗电快&#42;&#42;&#58;<br>   &#45; &#42;&#42;检查电池健康&#42;&#42;：进入设置 &#62; 电池 &#62; 电池健康，查看电池容量和建议。<br>   &#45; &#42;&#42;关闭耗电功能&#42;&#42;：关闭不必要的功能如蓝牙、定位服务和后台应用刷新。<br><br>如果这些步骤没有解决你的问题，建议前往苹果官方授权的维修中心进行专业检测和维修。苹果官网上可以找到最近的维修点地址和联系方式。</pre></div><div class=\"md-message\">\n\n很抱歉听到你的苹果手机出了问题。要确定具体问题，以下是一些常见问题和解决方法，希望能帮到你：\n\n1. **设备无法开机**:\n   - **充电**：确保设备有足够的电量。尝试使用不同的充电线和充电器，充电至少15分钟。\n   - **强制重启**：按住电源按钮和音量减小按钮（或仅电源按钮，取决于型号）约10秒钟，直到看到苹果标志。\n\n2. **屏幕无反应或触摸失灵**:\n   - **清洁屏幕**：确保屏幕没有灰尘或油污。\n   - **强制重启**：同上，尝试强制重启设备。\n\n3. **应用程序频繁崩溃**:\n   - **更新软件**：检查是否有最新的iOS更新，并安装。\n   - **重新安装应用**：卸载并重新安装出现问题的应用程序。\n\n4. **设备过热**:\n   - **关闭不必要的应用**：双击主屏幕按钮（或从底部向上滑动并暂停，取决于型号），关闭后台运行的应用。\n   - **避免高温环境**：将设备放在阴凉处，避免阳光直射。\n\n5. **无法连接到Wi-Fi**:\n   - **重启路由器**：尝试重启你的Wi-Fi路由器。\n   - **忘记网络并重新连接**：进入设置 > Wi-Fi，点击你连接的网络，然后选择“忽略此网络”，之后重新连接。\n\n6. **电池耗电快**:\n   - **检查电池健康**：进入设置 > 电池 > 电池健康，查看电池容量和建议。\n   - **关闭耗电功能**：关闭不必要的功能如蓝牙、定位服务和后台应用刷新。\n\n如果这些步骤没有解决你的问题，建议前往苹果官方授权的维修中心进行专业检测和维修。苹果官网上可以找到最近的维修点地址和联系方式。\n</div>"
+        ],
+        [
+            "<div class=\"user-message\">我的苹果手机坏了，不知道哪出了问题</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">&#60;li&#62;Owns an iPhone&#46; The iPhone is currently malfunctioning&#46; Uncertain about the specific issue with the iPhone&#46;<br></pre></div><div class=\"md-message\">\n\n<li>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone.\n\n</div>"
+        ],
+        [
+            "<div class=\"user-message\">下一代苹果手机什么时候发售，我等着买呢</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">&#60;li&#62;Owns an iPhone&#46; The iPhone is currently malfunctioning&#46; Uncertain about the specific issue with the iPhone&#46; Interested in the release date of the next generation of Apple iPhones&#46; Eager to purchase the next generation of Apple iPhones&#46;<br></pre></div><div class=\"md-message\">\n\n<li>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone. Interested in the release date of the next generation of Apple iPhones. Eager to purchase the next generation of Apple iPhones.\n\n</div>"
+        ],
+        [
+            "充电器接口能不能用type-c",
+            "<li>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone. Interested in the release date of the next generation of Apple iPhones. Eager to purchase the next generation of Apple iPhones. Interested in charging interfaces, specifically inquires about the compatibility of Type-C charging interfaces.\n"
+        ]
+    ],
+    "model_name": "TestMem0",
+    "single_turn": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "n_choices": 1,
+    "stop_sequence": [],
+    "token_upper_limit": 4096,
+    "max_generation_token": null,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "logit_bias": null,
+    "user_identifier": "",
+    "metadata": {}
+}

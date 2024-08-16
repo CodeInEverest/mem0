@@ -18,7 +18,7 @@ class TestMem0_Client(Base_Chat_Langchain_Client):
             openai_api_version=os.environ["AZURE_OPENAI_API_VERSION"],
             deployment_name=os.environ["AZURE_DEPLOYMENT_NAME"],
             openai_api_key=os.environ["AZURE_OPENAI_API_KEY"],
-            openai_api_type="TestMem0",
+            openai_api_type="azure",
             streaming=True
         )
     
@@ -77,19 +77,31 @@ class TestMem0_Client(Base_Chat_Langchain_Client):
     def get_answer_stream_iter(self):
         if self.memory is None:
             self.memory = self.createMem0()
-        userID = "lilei"
-        #self.memory.add(data="I likes to fly kite on weekends", user_id=userID, metadata={"category": "hobbies"})
+        userID = "xiaoming1"
+        #读取历史
+        history = self._get_langchain_style_history()
+        #print(f"history:{history}")
+        #本次输入内容加入记忆
+        currContent = ""
+        addMemory = ""
+        if len(history) > 0:
+            currContent = history[len(history)-1].content
+            #print(f"currContent:{currContent}")
+            addMemory = self.memory.add(data=currContent, user_id=userID, metadata={"category": "hobbies"})["addMemory"]
+        ##本次记忆作为返回
+        #completion = [addMemory]
+        
+        #读取所有记忆作为返回
         all_memories = self.memory.get_all(user_id=userID)
         completion = []
         for item in all_memories:
-            completion.append(item["memory"]+"\n")
+            completion.append("- "+item["memory"]+"\r\n")
             
         # it = CallbackToIterator()
         # assert isinstance(
         #     self.model, BaseChatModel
         # ), "model is not instance of LangChain BaseChatModel"
-        #history = self._get_langchain_style_history()
-        #print(f"history:{history}")
+        
         # def thread_func():
         #     self.model(
         #         messages=history, callbacks=[ChuanhuCallbackHandler(it.callback)]

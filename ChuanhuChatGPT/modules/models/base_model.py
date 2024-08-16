@@ -208,6 +208,8 @@ class ModelType(Enum):
             model_type = ModelType.GoogleGemini
         elif "midjourney" in model_name_lower:
             model_type = ModelType.Midjourney
+        elif "testmem0" in model_name_lower:
+            model_type = ModelType.TestMem0
         elif "azure" in model_name_lower or "api" in model_name_lower:
             model_type = ModelType.LangchainChat
         elif "星火大模型" in model_name_lower:

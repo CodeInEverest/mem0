@@ -1,0 +1,44 @@
+{
+    "system": "You are a helpful assistant.",
+    "history": [
+        {
+            "role": "user",
+            "content": "今天下雨了"
+        },
+        {
+            "role": "assistant",
+            "content": "下雨的时候记得带把伞，以免淋湿。如果需要出门，穿一双防水的鞋子也是个不错的选择。希望你今天过得愉快！你有什么特别的计划吗？"
+        },
+        {
+            "role": "user",
+            "content": "懒得做饭，今天吃快餐"
+        },
+        {
+            "role": "assistant",
+            "content": "- Needs to do homework early after school today.\n- Enjoys running\n- Feels happy after running\n- Finds running relaxing\n- Plans to go to bed early tonight.\n- Questions if all students have such a hard time.\n- Plans to go to Shenzhen tomorrow.\n- Needs to buy a ticket for the trip.\n- Likes to fly kites\n- Enjoys this activity on weekends\n- Finds math application problems to be similar and easy to complete.\n- Feels overwhelmed by the amount of homework given by teachers.\n- Interested in calculus and limits.\n- Curious about the historical development of calculus.\n- Specifically interested in whether Newton considered the relationship between calculus and limits when he developed it.\n"
+        }
+    ],
+    "chatbot": [
+        [
+            "<div class=\"user-message\">今天下雨了</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">下雨的时候记得带把伞，以免淋湿。如果需要出门，穿一双防水的鞋子也是个不错的选择。希望你今天过得愉快！你有什么特别的计划吗？</pre></div><div class=\"md-message\">\n\n下雨的时候记得带把伞，以免淋湿。如果需要出门，穿一双防水的鞋子也是个不错的选择。希望你今天过得愉快！你有什么特别的计划吗？\n</div>"
+        ],
+        [
+            "懒得做饭，今天吃快餐",
+            "- Needs to do homework early after school today.\n- Enjoys running\n- Feels happy after running\n- Finds running relaxing\n- Plans to go to bed early tonight.\n- Questions if all students have such a hard time.\n- Plans to go to Shenzhen tomorrow.\n- Needs to buy a ticket for the trip.\n- Likes to fly kites\n- Enjoys this activity on weekends\n- Finds math application problems to be similar and easy to complete.\n- Feels overwhelmed by the amount of homework given by teachers.\n- Interested in calculus and limits.\n- Curious about the historical development of calculus.\n- Specifically interested in whether Newton considered the relationship between calculus and limits when he developed it.\n"
+        ]
+    ],
+    "model_name": "TestMem0",
+    "single_turn": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "n_choices": 1,
+    "stop_sequence": [],
+    "token_upper_limit": 4096,
+    "max_generation_token": null,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "logit_bias": null,
+    "user_identifier": "",
+    "metadata": {}
+}

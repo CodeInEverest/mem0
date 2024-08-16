@@ -1,0 +1,32 @@
+{
+    "system": "You are a helpful assistant.",
+    "history": [
+        {
+            "role": "user",
+            "content": "我的苹果手机坏了，不知道哪出了问题"
+        },
+        {
+            "role": "assistant",
+            "content": "<h>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone. Interested in the release date of the next generation of Apple iPhones. Eager to purchase the next generation of Apple iPhones. Interested in charging interfaces, specifically inquires about the compatibility of Type-C charging interfaces.\r\n"
+        }
+    ],
+    "chatbot": [
+        [
+            "<div class=\"user-message\">我的苹果手机坏了，不知道哪出了问题</div>",
+            "<div class=\"raw-message hideM\"><pre class=\"fake-pre\">&#60;h&#62;Owns an iPhone&#46; The iPhone is currently malfunctioning&#46; Uncertain about the specific issue with the iPhone&#46; Interested in the release date of the next generation of Apple iPhones&#46; Eager to purchase the next generation of Apple iPhones&#46; Interested in charging interfaces, specifically inquires about the compatibility of Type&#45;C charging interfaces&#46;\r<br></pre></div><div class=\"md-message\">\n\n<h>Owns an iPhone. The iPhone is currently malfunctioning. Uncertain about the specific issue with the iPhone. Interested in the release date of the next generation of Apple iPhones. Eager to purchase the next generation of Apple iPhones. Interested in charging interfaces, specifically inquires about the compatibility of Type-C charging interfaces.\r\n\n</div>"
+        ]
+    ],
+    "model_name": "TestMem0",
+    "single_turn": false,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "n_choices": 1,
+    "stop_sequence": [],
+    "token_upper_limit": 4096,
+    "max_generation_token": null,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0,
+    "logit_bias": null,
+    "user_identifier": "",
+    "metadata": {}
+}

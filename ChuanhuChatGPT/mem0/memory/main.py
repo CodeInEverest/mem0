@@ -152,6 +152,8 @@ class Memory(MemoryBase):
             for item in existing_memories
         ]
         logging.info(f"Total existing memories: {len(existing_memories)}")
+        #print(f"===serialized_existing_memories:{serialized_existing_memories}")
+        #print(f"===extracted_memories:{extracted_memories}")
         messages = get_update_memory_messages(
             serialized_existing_memories, extracted_memories
         )
@@ -197,7 +199,7 @@ class Memory(MemoryBase):
                     {"memory_id": function_result, "function_name": function_name},
                 )
         capture_event("mem0.add", self)
-        return {"message": "ok"}
+        return {"message": "ok", "addMemory":extracted_memories}
 
     def get(self, memory_id):
         """
